@@ -1,0 +1,32 @@
+<div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="data.name">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input matInput [(ngModel)]="data.description">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Start Date</mat-label>
+      <input matInput [(ngModel)]="data.startDate">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>End Date</mat-label>
+      <input matInput [(ngModel)]="data.endDate">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Capacity</mat-label>
+      <input matInput [(ngModel)]="data.capacity">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions>
+    <button  mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="data"  cdkFocusInitial>Ok</button>
+  </div>
+  
+  

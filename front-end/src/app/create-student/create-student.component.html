@@ -1,0 +1,39 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+    <mat-label>First Name</mat-label>
+    <input type="text" matInput [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}">
+
+    </mat-form-field>
+</form>
+
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input type="text" matInput [(ngModel)]="lastName" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="text" matInput [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+        <mat-label>Date of Birth</mat-label>
+        <input type="text" matInput [(ngModel)]="dateOfBirth" [ngModelOptions]="{standalone: true}">
+     </mat-form-field>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+        <mat-label>Address</mat-label>
+        <input type="text" matInput [(ngModel)]="address" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+
+    <div class="button">
+        <button mat-raised-button color="primary" (click)="createStudent()">Create</button>
+    </div>
+
+</form>
